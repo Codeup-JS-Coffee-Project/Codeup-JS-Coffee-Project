@@ -1,5 +1,7 @@
 "use strict"
 
+
+// ++++++RENDER COFFEE FUNCTIONS +++++++ //
 function renderCoffee(coffee) {
     var html = '<tr class="coffee">';
     // html += '<td>' + coffee.id + '</td>';
@@ -8,7 +10,7 @@ function renderCoffee(coffee) {
     html += '</tr>';
 
     return html;
-}
+};
 
 function renderCoffees(coffees) {
     var html = '';
@@ -17,13 +19,13 @@ function renderCoffees(coffees) {
     }
     return html;
 
-}
+};
 
 
+// ++++++ "ADD NEW COFFEE" CODE BELOW +++++++ //
 
-var roastSelectionNew = document.querySelector('#roast-selection-add');
+var roastSelectionNew = document.querySelector('#roast-selection2');
 var newCoffeeInput = document.querySelector('#addNewCoffee');
-
 
 function addCoffee(){
     var newCoffee = {};
@@ -31,10 +33,12 @@ function addCoffee(){
     newCoffee.roast = roastSelectionNew.value;
     coffees.push(newCoffee);
     tbody.innerHTML = renderCoffees(coffees);
-}
+};
 
 
+// VAR COFFEES ARRAY
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
+
 var coffees = [
     {id: 1, name: 'Light City', roast: "light"},
     {id: 2, name: 'Half City', roast: "light"},
@@ -57,25 +61,37 @@ var tbody = document.querySelector('#coffees');
 tbody.innerHTML = renderCoffees(coffees);
 
 
+// RIGHT TOP EVENT LISTENERS
+
+var roastSelection1 = document.querySelector('#roast-selection1');
+
 var submitButton1 = document.querySelector('#submit1');
 submitButton1.addEventListener('click', updateCoffees);
 
-// This changes our table to text:
-// document.getElementById("coffeeDisplay").innerHTML = renderCoffees(coffees);
 
+
+// var searchCoffee = document.querySelector('#addNewCoffee');
+// searchCoffee.addEventListener('keydown', renderCoffee);
+
+
+
+
+// RIGHT BOTTOM SECTION BUTTONS/ EVENT LISTENERS
+var roastSelection2 = document.querySelector('#roast-selection2');
+
+var addNewCoffee = document.querySelector('#addNewCoffee');
+addNewCoffee.addEventListener('click', updateCoffees);
 
 
 var submitButton2 = document.querySelector('#submit2');
 submitButton2.addEventListener('click', addCoffee);
 
 
-var roastSelection = document.querySelector('#roast-selection');
-
 
 //Update Coffees function & submit //
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedRoast = roastSelection.value;
+    var selectedRoast = roastSelection1.value;
     var filteredCoffees = [];
     coffees.forEach(function (coffee) {
             if (selectedRoast == "all") {
