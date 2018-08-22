@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<!-- COFFEE BANNER-->
+<div class="container-fluid text-center">
+    <h1>Some Damn Good Coffee!</h1>
+    <!--LINE BREAK-->
+    <HR>
+</div>
+
+<div class="row">
+    <!--This is the left half where animation takes place-->
+    <div class="col-6">
+        <table>
+            <thead>
+            <tr>
+                <!--<th>ID</th>-->
+                <th>NAME</th>
+                <th>ROAST</th>
+            </tr>
+            </thead>
+            <tbody id="coffees"></tbody>
+        </table>
+    </div>
+
+    <!--This is the right half where BOTH tables are in place-->
+    <div class="col-6 ">
+
+
+                                     <!--++++++++++++++++++++ TOP HALF/ RIGHT SIDE+++++++++++++++++++++++-->
+
+
+        <!--TOP COFFEE SEARCH FEATURE-->
+        <div class="card-body text-left">
+
+            <!--ROAST DROPDOWN MENU-->
+            <h5>Roast</h5>
+            <div class="input-group">
+                <select id="roast-selection" class="custom-select">
+                    <option onclick="renderCoffees(coffees)">all</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+            </div>
+            <!--COFFEE NAME SEARCH INPUT-->
+            <h5 class="mt-3">Coffee Name</h5>
+            <div class="input-group">
+                <input  type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            </div>
+
+            <!--Submit Button For Top Menu-->
+            <button id="submit" type="submit" class="btn btn-primary btn-lg btn-block mt-3 py-0">Submit</button>
+            <!--LINE BREAK-->
+            <HR>
+
+            <!-- ADD A COFFEE BANNER-->
+            <div class="container-fluid text-center">
+                <h1>Add a Coffee</h1>
+            </div>
+
+            <!--BOTTOM ADD COFFEE FEATURE-->
+            <div class="row bg-warning"></div>
+        </div>
+
+
+                             <!--++++++++++++++++++++ BOTTOM HALF/ RIGHT SIDE+++++++++++++++++++++++-->
+
+        <div class="card-body text-left">
+
+            <!--ROAST DROPDOWN MENU-->
+            <h5>Roast</h5>
+            <div class="input-group">
+                <select id="roast-selection" class="custom-select">
+                    <option>all</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+            </div>
+            <!--COFFEE NAME SEARCH INPUT-->
+            <h5 class="mt-3">Name</h5>
+            <div class="input-group">
+                <input type="text" class="form-control">
+            </div>
+
+            <!--Submit Button For Top Menu-->
+            <button id="submit" type="button" class="btn btn-primary btn-lg btn-block mt-3 py-0">Submit</button>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+// by end of day 21 AUG need to include JS functionality on left side of webpage
