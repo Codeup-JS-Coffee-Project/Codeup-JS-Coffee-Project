@@ -16,16 +16,17 @@
 </div>
 
 <div class="row">
-    <!--This is the left half where animation takes place-->
-    <div class="col-6">
-        <table>
-            <thead>
-            <tr>
-                <!--<th>ID</th>-->
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-            </thead>
+    <!-- +++++++++ LEFT SIDE OF WEBPAGE +++++++-->
+
+    <div id="coffeeDisplay" class="col-6">
+        <table id="test">
+            <!--<thead>-->
+            <!--<tr>-->
+                <!--&lt;!&ndash;<th>ID</th>&ndash;&gt;-->
+                <!--<th>NAME</th>-->
+                <!--<th>ROAST</th>-->
+            <!--</tr>-->
+            <!--</thead>-->
             <tbody id="coffees"></tbody>
         </table>
     </div>
@@ -53,11 +54,11 @@
             <!--COFFEE NAME SEARCH INPUT-->
             <h5 class="mt-3">Coffee Name</h5>
             <div class="input-group">
-                <input  type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input  type="text" class="form-control">
             </div>
 
             <!--Submit Button For Top Menu-->
-            <button id="submit" type="submit" class="btn btn-primary btn-lg btn-block mt-3 py-0">Submit</button>
+            <button id="submit1" type="submit" class="btn btn-primary btn-lg btn-block mt-3 py-0">Submit</button>
             <!--LINE BREAK-->
             <HR>
 
@@ -78,8 +79,7 @@
             <!--ROAST DROPDOWN MENU-->
             <h5>Roast</h5>
             <div class="input-group">
-                <select id="roast-selection" class="custom-select">
-                    <option>all</option>
+                <select id="roast-selection-add" class="custom-select">
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
@@ -88,11 +88,11 @@
             <!--COFFEE NAME SEARCH INPUT-->
             <h5 class="mt-3">Name</h5>
             <div class="input-group">
-                <input type="text" class="form-control">
+                <input id="addNewCoffee" type="text" class="form-control">
             </div>
 
             <!--Submit Button For Top Menu-->
-            <button id="submit" type="button" class="btn btn-primary btn-lg btn-block mt-3 py-0">Submit</button>
+            <button id="submit2" type="button" class="btn btn-primary btn-lg btn-block mt-3 py-0">Submit</button>
         </div>
     </div>
 </div>
@@ -109,4 +109,4 @@
 </body>
 </html>
 
-// need to improve JS functionality on left side of webpage
+ <!--need to improve JS functionality on left side of webpage-->
