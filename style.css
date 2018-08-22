@@ -1,3 +1,9 @@
+body{
+    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/03/20/303551/06cc39aef90d8dc5d8ff4ecff1902868-700.jpg");
+    background-size: cover;
+}
+
+
 table {
     border-collapse: collapse;
     margin: 15px 0;
