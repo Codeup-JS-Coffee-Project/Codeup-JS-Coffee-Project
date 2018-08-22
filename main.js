@@ -66,4 +66,4 @@ function updateCoffees(e) {
 
     submitButton.addEventListener('click', updateCoffees);
 
-// 21 AUG need to include JS functionality on left side of webpage
+// need to improve JS functionality on left side of webpage
